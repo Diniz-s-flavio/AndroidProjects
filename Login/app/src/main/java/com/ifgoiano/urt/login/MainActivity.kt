@@ -32,13 +32,13 @@ class MainActivity : AppCompatActivity() {
             val username = usernameTextField.text.toString()
             val password = passwordTextField.text.toString()
 
-            if (username == "admin" && password == "1234") {
+            if (username == "flavio" && password == "123") {
                 // Login correto, ir para a segunda atividade
                 val intent = Intent(this, HomeActivity::class.java)
                 val bundle = Bundle()
                 bundle.putString("username", username)
 
-                intent.putExtra("username", username)
+                intent.putExtras(bundle)
                 startActivity(intent)
             } else {
                 // Informar ao usuário que as credenciais estão incorretas

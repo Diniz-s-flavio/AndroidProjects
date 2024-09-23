@@ -20,8 +20,10 @@ class HomeActivity : AppCompatActivity() {
 
         val welcomeTextView = findViewById<TextView>(R.id.welcomeTextView)
 
+        val bundle = intent.extras
+
         // Receber o nome do usuário passado como parâmetro
-        val username = intent.getStringExtra("username")
+        val username = bundle?.getString("username")
 
         // Exibir a mensagem de boas-vindas
         welcomeTextView.text = "Bem-vindo, $username!"
