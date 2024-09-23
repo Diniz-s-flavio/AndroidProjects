@@ -35,6 +35,9 @@ class MainActivity : AppCompatActivity() {
             if (username == "admin" && password == "1234") {
                 // Login correto, ir para a segunda atividade
                 val intent = Intent(this, HomeActivity::class.java)
+                val bundle = Bundle()
+                bundle.putString("username", username)
+
                 intent.putExtra("username", username)
                 startActivity(intent)
             } else {
