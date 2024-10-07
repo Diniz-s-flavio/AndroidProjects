@@ -18,7 +18,7 @@ class CronometroActivity : AppCompatActivity() {
     lateinit var startButton: Button
     lateinit var stopButton: Button
     lateinit var resetButton: Button
-    lateinit var timerButton: Button
+    lateinit var timerCallButton: Button
 
     private var handler: Handler = Handler(Looper.getMainLooper())
     private var startTime: Long = 0L
@@ -26,6 +26,9 @@ class CronometroActivity : AppCompatActivity() {
     private var timeSwapBuff: Long = 0L
     private var updatedTime: Long = 0L
     private var running = false
+
+    lateinit var stopwathBundle: Bundle
+    lateinit var appBundle: Bundle
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -40,17 +43,23 @@ class CronometroActivity : AppCompatActivity() {
         }
 
         if (savedInstanceState != null) {
-            Log.d("MainActivity", "Restaurando estado da atividade")
             startTime = savedInstanceState.getLong("startTime")
-            timeInMilliseconds =  savedInstanceState.getLong("timeInMilliseconds")
-            running = savedInstanceState.getBoolean("executionState")
+            timeInMilliseconds = savedInstanceState.getLong("timeInMilliseconds")
+            timeSwapBuff = savedInstanceState.getLong("timeSwapBuff")
+            running = savedInstanceState.getBoolean("running")
+
+            if (running) {
+                handler.postDelayed(runTimer, 0)
+                timeInMilliseconds = SystemClock.uptimeMillis() - startTime
+                updatedTime = timeSwapBuff + timeInMilliseconds
+            }
         }
 
         clockTextView = findViewById(R.id.clockTextView)
         startButton = findViewById(R.id.startButton)
         stopButton = findViewById(R.id.stopButton)
         resetButton = findViewById(R.id.resetButton)
-        timerButton = findViewById(R.id.timerButton)
+        timerCallButton = findViewById(R.id.timerButton)
 
         startButton.setOnClickListener {
             onClickStart()
@@ -64,8 +73,18 @@ class CronometroActivity : AppCompatActivity() {
             onClickReset()
         }
 
-        timerButton.setOnClickListener{
+        timerCallButton.setOnClickListener{
+
+            stopwathBundle.putLong("startTime", startTime)
+            stopwathBundle.putLong("timeInMilliseconds", timeInMilliseconds)
+            stopwathBundle.putLong("timeSwapBuff", timeSwapBuff)
+            stopwathBundle.putBoolean("running", running)
+
+            appBundle.putBundle("stopwathBundle", stopwathBundle)
+
             val intent = Intent(this, TeporizadorActivity::class.java)
+            inte
+
             startActivity(intent)
         }
 
@@ -99,7 +118,8 @@ class CronometroActivity : AppCompatActivity() {
     override fun onSaveInstanceState(outState: Bundle) {
         outState.putLong("startTime", startTime)
         outState.putLong("timeInMilliseconds", timeInMilliseconds)
-        outState.putBoolean("executionState", running)
+        outState.putLong("timeSwapBuff", timeSwapBuff)
+        outState.putBoolean("running", running)
 
         Log.d("MainActivity", "onSaveInstanceState chamado")
 
