@@ -83,7 +83,6 @@ class CronometroActivity : AppCompatActivity() {
             appBundle.putBundle("stopwathBundle", stopwathBundle)
 
             val intent = Intent(this, TeporizadorActivity::class.java)
-            inte
 
             startActivity(intent)
         }

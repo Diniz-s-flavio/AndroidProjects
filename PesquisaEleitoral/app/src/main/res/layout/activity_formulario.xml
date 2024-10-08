@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Imagem TRE -->
+    <ImageView
+        android:id="@+id/imgTre"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="left"
+        android:src="@drawable/tre_logo" />
+
+    <!-- Nome Completo -->
+    <EditText
+        android:id="@+id/etNome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nome completo" />
+
+    <!-- Título de Eleitor -->
+    <EditText
+        android:id="@+id/etTitulo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Título de eleitor"
+        android:inputType="number" />
+
+    <!-- Zona Eleitoral -->
+    <EditText
+        android:id="@+id/etZona"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Zona eleitoral"
+        android:inputType="number" />
+
+    <!-- Seção Eleitoral -->
+    <EditText
+        android:id="@+id/etSecao"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Seção eleitoral"
+        android:inputType="number" />
+
+    <!-- Cidade -->
+    <EditText
+        android:id="@+id/etCidade"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Cidade" />
+
+    <!-- Estado -->
+    <Spinner
+        android:id="@+id/spinnerEstado"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Escolha o Prefeito:" />
+
+            <RadioGroup
+                android:id="@+id/rgPrefeito"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <RadioButton
+                    android:id="@+id/prefeito1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="João Gaybriel" />
+
+                <RadioButton
+                    android:id="@+id/prefeito2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Marcelo" />
+
+                <RadioButton
+                    android:id="@+id/prefeito3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Jars Antonio" />
+
+                <RadioButton
+                    android:id="@+id/prefeito4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Biriguijohnson" />
+            </RadioGroup>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Escolha o Vereador:" />
+
+            <Spinner
+                android:id="@+id/spinnerVereador"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="100dp"
+            android:orientation="vertical">
+
+            <!-- Partidos Preferidos -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Partidos preferidos:" />
+
+            <CheckBox
+                android:id="@+id/partido1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="MDB " />
+
+            <CheckBox
+                android:id="@+id/partido2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="PT" />
+
+            <CheckBox
+                android:id="@+id/partido3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="PSOL" />
+
+            <CheckBox
+                android:id="@+id/partido4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="PMDB" />
+
+            <CheckBox
+                android:id="@+id/partido5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="PTB" />
+
+            <CheckBox
+                android:id="@+id/partido6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="PSDB" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnSubmeter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Submeter" />
+
+</LinearLayout>
