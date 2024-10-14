@@ -5,7 +5,6 @@
     android:orientation="vertical"
     android:padding="16dp">
 
-    <!-- Imagem TRE -->
     <ImageView
         android:id="@+id/imgTre"
         android:layout_width="100dp"
@@ -13,14 +12,12 @@
         android:layout_gravity="left"
         android:src="@drawable/tre_logo" />
 
-    <!-- Nome Completo -->
     <EditText
         android:id="@+id/etNome"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Nome completo" />
 
-    <!-- Título de Eleitor -->
     <EditText
         android:id="@+id/etTitulo"
         android:layout_width="match_parent"
@@ -28,7 +25,6 @@
         android:hint="Título de eleitor"
         android:inputType="number" />
 
-    <!-- Zona Eleitoral -->
     <EditText
         android:id="@+id/etZona"
         android:layout_width="match_parent"
@@ -36,7 +32,6 @@
         android:hint="Zona eleitoral"
         android:inputType="number" />
 
-    <!-- Seção Eleitoral -->
     <EditText
         android:id="@+id/etSecao"
         android:layout_width="match_parent"
@@ -44,14 +39,12 @@
         android:hint="Seção eleitoral"
         android:inputType="number" />
 
-    <!-- Cidade -->
     <EditText
         android:id="@+id/etCidade"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Cidade" />
 
-    <!-- Estado -->
     <Spinner
         android:id="@+id/spinnerEstado"
         android:layout_width="match_parent"
