@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:orientation="vertical">
+    <ImageView
+        android:id="@+id/img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:transitionName="qualquer_coisa_aqui"
+        android:src="@drawable/go"
+        android:layout_margin="10dp"
+        android:layout_gravity="center"/>
+
+    <TextView
+        android:id="@+id/tEstadoName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Goiás"/>
+    <TextView
+        android:id="@+id/tEstadoCapital"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Goiás"/>
+    <TextView
+        android:id="@+id/tEstadoPopulacao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Goiás"/>
+    <TextView
+        android:id="@+id/tEstadoRegiao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Goiás"/>
+
+</LinearLayout>
