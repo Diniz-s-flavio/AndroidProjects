@@ -8,30 +8,31 @@
         android:id="@+id/img"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:transitionName="qualquer_coisa_aqui"
+        android:transitionName="@string/transition_key"
         android:src="@drawable/go"
         android:layout_margin="10dp"
-        android:layout_gravity="center"/>
+        android:layout_gravity="center"
+        />
 
     <TextView
-        android:id="@+id/tEstadoName"
+        android:id="@+id/tvEstadoName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Goiás"/>
+        android:text=""/>
     <TextView
-        android:id="@+id/tEstadoCapital"
+        android:id="@+id/tvEstadoCapital"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Goiás"/>
+        android:text=""/>
     <TextView
-        android:id="@+id/tEstadoPopulacao"
+        android:id="@+id/tvEstadoPopulacao"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Goiás"/>
+        android:text=""/>
     <TextView
-        android:id="@+id/tEstadoRegiao"
+        android:id="@+id/tvEstadoRegiao"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Goiás"/>
+        android:text=""/>
 
 </LinearLayout>
