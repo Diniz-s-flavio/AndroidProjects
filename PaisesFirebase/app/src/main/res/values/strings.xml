@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">PaisesFirebase</string>
+    <string name="ma_title">Exibir</string>
+    <string name="ma_pag_title">Exibir Registro</string>
+    <string name="lableCoutriAcronym">Sigla do País</string>
+    <string name="lableCoutriName">Nome do País</string>
+    <string name="lableCoutriDC">Nome da Capital</string>
+</resources>
