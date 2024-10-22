@@ -2,43 +2,87 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:backgroundTint="#FFFFFF"
     android:orientation="vertical"
     android:padding="20dp">
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:textSize="24dp"
-        android:text="@string/ma_pag_title"/>
+        android:text="@string/ma_pag_title"
+        android:textSize="24dp" />
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:text="@string/lableCoutriDC"/>
+        android:text="@string/lableCoutriDC" />
+
     <EditText
-        android:id="@+id/etCoutriDC"
+        android:id="@+id/editTextCapital"
         android:layout_width="244dp"
         android:layout_height="wrap_content"
-        android:layout_gravity="center"/>
+        android:layout_gravity="center" />
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:text="@string/lableCoutriName"/>
+        android:text="@string/lableCoutriName" />
+
     <EditText
-        android:id="@+id/etCoutriName"
+        android:id="@+id/editTextPais"
         android:layout_width="244dp"
         android:layout_height="wrap_content"
-        android:layout_gravity="center"/>
+        android:layout_gravity="center" />
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:text="@string/lableCoutriAcronym"/>
+        android:text="@string/lableCoutriAcronym" />
+
     <EditText
-        android:id="@+id/etCoutriAcronym"
+        android:id="@+id/editTextSigla"
         android:layout_width="244dp"
         android:layout_height="wrap_content"
-        android:layout_gravity="center"/>
+        android:layout_gravity="center" />
+
+    <TextView
+        android:id="@+id/textViewAviso"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="" />
+
+    <Button
+        android:id="@+id/buttonCriar"
+        android:layout_width="105dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Criar" />
+
+    <Button
+        android:id="@+id/buttonLer"
+        android:layout_width="106dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Ler" />
+
+    <Button
+        android:id="@+id/buttonAtualizar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Atualizar" />
+
+    <Button
+        android:id="@+id/buttonDeletar"
+        android:layout_width="105dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Deletar" />
 
 </LinearLayout>
