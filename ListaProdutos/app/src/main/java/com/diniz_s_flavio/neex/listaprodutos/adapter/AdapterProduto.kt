@@ -8,6 +8,7 @@ import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.diniz_s_flavio.neex.listaprodutos.R
+import com.diniz_s_flavio.neex.listaprodutos.databinding.ActivityMainBinding
 import com.diniz_s_flavio.neex.listaprodutos.model.Produto
 
 class AdapterProduto(private val context: Context, private val produtos: MutableList<Produto>): RecyclerView.Adapter<AdapterProduto.ProdutoViewHolder>() {
@@ -29,10 +30,17 @@ class AdapterProduto(private val context: Context, private val produtos: Mutable
     override fun getItemCount(): Int = produtos.size
 
     inner class ProdutoViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
+
         val foto = itemView.findViewById<ImageView>(R.id.fotoProduto)
         val nome = itemView.findViewById<TextView>(R.id.nomeProduto)
         val descricao = itemView.findViewById<TextView>(R.id.descricaoProduto)
         val preco =  itemView.findViewById<TextView>(R.id.precoProduto)
+
+    }
+
+
+
+    class ProductOnClickListener {
 
     }
 }
