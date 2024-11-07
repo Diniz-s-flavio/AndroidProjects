@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white"
+    android:layout_margin="10dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ImageView
+        android:id="@+id/fotoProduto"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:src="@drawable/gabinete"
+        android:layout_margin="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+    <TextView
+        android:id="@+id/nomeProduto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Gabinete Gamer"
+        android:textSize="20sp"
+        android:textColor="@android:color/black"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@id/fotoProduto"
+        android:layout_marginStart="140dp"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginEnd="10dp"
+        />
+
+    <TextView
+        android:id="@+id/descricaoProduto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@id/fotoProduto"
+        android:layout_marginStart="140dp"
+        android:maxLines="4"
+        app:layout_constraintTop_toBottomOf="@id/nomeProduto"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="10dp"
+        android:text="A série Carbide SPEC-DELTA RGB é uma caixa ATX de torre média de vidro temperado com estilo angular impressionante."
+        />
+
+    <TextView
+        android:id="@+id/precoProduto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="140dp"
+        android:text="R$ 220,00"
+        android:textSize="18sp"
+        android:textColor="@android:color/holo_green_dark"
+        app:layout_constraintTop_toBottomOf="@id/descricaoProduto"
+        app:layout_constraintStart_toEndOf="@id/fotoProduto"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="10dp"
+        android:textStyle="bold"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
