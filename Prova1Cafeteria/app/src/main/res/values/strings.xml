@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Prova 1 - Cafeteria</string>
+    <string name="menu_title_text">Cafeteria do Seu Madruga</string>
+    <string name="drinkDetaiTitle">Informações sobre a Bebida</string>
+</resources>
