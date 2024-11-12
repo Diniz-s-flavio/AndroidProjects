@@ -36,7 +36,6 @@ class MainActivity : AppCompatActivity() {
          return object : CategoryAdapter.CategoryOnClickListener {
              @SuppressLint("RestrictedAPI")
              override fun onClickCategory(holder: CategoryAdapter.CategoryViewHolder?, idx: Int) {
-                 Log.println(Log.ERROR, "=============", "++++++++++++++++++++++++++++++++++++++++++++++")
                  val category = categories.getOrNull(idx) ?: return
 
                  if(category == categories[0]){
